@@ -1,9 +1,10 @@
 import { useDispatch, useSelector } from "react-redux";
 import Table from 'react-bootstrap/Table';
 import Button from 'react-bootstrap/Button';
-import { cartrecDel} from "./cartSlice";
+import { cartrecDel,addQnty,DelQnty } from "./cartSlice";
 
-
+import { FaPlusCircle } from "react-icons/fa";
+import { FaMinusCircle } from "react-icons/fa";
 
 const CartProduct=()=>{
     const mycart=useSelector((state)=>state.mycart.cart);
@@ -26,8 +27,21 @@ const CartProduct=()=>{
                 <td>{key.name}</td>
                 <td>{key.description}</td>
                 <td>{key.price}</td>
-               
-                  <td> {key.price} </td>
+                <td>
+
+                    <a href="#"> 
+                        <FaMinusCircle onClick={()=>{qtyDec(key.id)}} />
+ 
+                    </a>
+    
+                        <span style={{paddingLeft:"5px", paddingRight:"5px", fontWeight:"bold"}}> {key.qnty}  </span>
+   
+                    <a href="#">
+                        <FaPlusCircle onClick={()=>{qtyInc(key.id)}} />
+                    </a>
+    
+                  </td>
+                  <td> {key.price*key.qnty} </td>
                 <td> <Button variant="secondary" size="sm" onClick={()=>{cartRecDel(key.id)}}>Delete</Button></td>
             </tr>
             </>
