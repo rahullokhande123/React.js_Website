@@ -17,7 +17,7 @@ const CartProduct=()=>{
     
     let totalAmount=0;
     const ans=mycart.map((key)=>{
-      totalAmount+=key.price;
+      totalAmount+=key.price*key.qnty;
         return(
             <>
             <tr>
@@ -27,7 +27,7 @@ const CartProduct=()=>{
                 <td>{key.description}</td>
                 <td>{key.price}</td>
                
-                
+                  <td> {key.price} </td>
                 <td> <Button variant="secondary" size="sm" onClick={()=>{cartRecDel(key.id)}}>Delete</Button></td>
             </tr>
             </>
@@ -43,7 +43,8 @@ const CartProduct=()=>{
           <th>Product Name</th>
           <th>Description</th>
           <th>Price</th>
-          
+          <th>Quantiy</th>
+          <th>Total Price</th>
           <th></th>
         </tr>
       </thead>
@@ -51,7 +52,8 @@ const CartProduct=()=>{
         {ans}
       </tbody>
       <tr>
-          
+          <th></th>
+          <th></th>
           <th></th>
           <th></th>
           <th>Total Amount</th>

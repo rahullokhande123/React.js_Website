@@ -27,7 +27,7 @@ const Home=()=>{
     },[])
 
     const DataCart=(pid,nm,img,desc,price)=>{
-          dispatch(addtoCart({id:pid,name:nm,images:img,description:desc,price:price}))
+          dispatch(addtoCart({id:pid,name:nm,images:img,description:desc,qnty:1,price:price}))
     }
 
     const ans=mydata.map((key)=>{
