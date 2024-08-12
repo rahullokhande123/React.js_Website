@@ -21,7 +21,42 @@ const cartSlice=createSlice({
         cartrecDel:(state, actions)=>{
           state.cart=state.cart.filter((key)=>key.id!=actions.payload);
         
+        },
+
+
+        addQnty:(state, actions)=>{
+
+          for(var i=0; i<state.cart.length; i++)
+          {
+              if (state.cart[i].id==actions.payload)
+              {
+                  state.cart[i].qnty+=1;
+                  //state.cart[i].qnty= state.cart[i].qnty+1;
+
+              }
+          }
+      },
+
+      DelQnty:(state, actions)=>{
+
+        for(var i=0; i<state.cart.length; i++)
+        {
+            if (state.cart[i].id==actions.payload)
+            {
+                if (state.cart[i].qnty<=1)
+                {
+                   message.error("Quantity not less than 1");
+                }
+                else 
+                {
+                    state.cart[i].qnty-=1;
+                    //state.cart[i].qnty= state.cart[i].qnty-1;
+                }
+               
+
+            }
         }
+    }
     }
 })
 export default cartSlice.reducer;
