@@ -14,7 +14,13 @@ const CartProduct=()=>{
         dispatch(cartrecDel(id));
     }
 
-   
+    const qtyInc=(id)=>{
+      dispatch(addQnty(id))
+    }
+  
+    const qtyDec=(id)=>{
+    dispatch(DelQnty(id))
+    }
     
     let totalAmount=0;
     const ans=mycart.map((key)=>{
