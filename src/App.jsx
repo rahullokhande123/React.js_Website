@@ -280,6 +280,7 @@ import { BrowserRouter,Routes,Route } from "react-router-dom"
 import Layout from "./Laylout"
 import Home from "./component/Home";
 import CartProduct from "./CartProduct";
+import SearchProduct from "./component/SearchProduct";
 
 const App=()=>{
 
@@ -290,7 +291,9 @@ const App=()=>{
               <Routes>
                      <Route  path="/" element={<Layout/>} >
                              <Route index element={<Home/>}/>
+                             <Route path="home" element={<Home/>}/> 
                              <Route path="cartproduct" element={<CartProduct/>}/>
+                             <Route path="searchproduct" element={<SearchProduct/>}/>
                         
                      </Route>
               </Routes>       
