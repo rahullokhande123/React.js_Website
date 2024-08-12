@@ -1,0 +1,17 @@
+/* .cartData{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+} */
+
+/* #cartData{
+    display: flex;
+} */
+
+#cartlogo{
+    border: "1px solid white";
+    border-radius: "50%";
+}
+

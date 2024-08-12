@@ -1,0 +1,68 @@
+{
+    "product":[
+        {
+            "id":1,
+            "name":"frok top",
+            "description":"This is Red Color Clothe",
+            "price":300,
+            "category":"woman",
+            "images":"b1.jpg"
+        },
+        {
+            "id":2,
+            "name":"frok top",
+            "description":"This is Red Color Clothe",
+            "price":300,
+            "category":"woman",
+            "images":"b2.jpg"
+        },
+        {
+            "id":3,
+            "name":"frok top",
+            "description":"This is Red Color Clothe",
+            "price":300,
+            "category":"woman",
+            "images":"b3.jpg"
+        },
+        {
+            "id":4,
+            "name":"frok top",
+            "description":"This is Red Color Clothe",
+            "price":300,
+            "category":"woman",
+            "images":"c1.jpg"
+        },
+        {
+            "id":5,
+            "name":"frok top",
+            "description":"This is Red Color Clothe",
+            "price":300,
+            "category":"woman",
+            "images":"c2.jpg"
+        },
+        {
+            "id":6,
+            "name":"frok top",
+            "description":"This is Red Color Clothe",
+            "price":300,
+            "category":"woman",
+            "images":"c3.jpg"
+        },
+        {
+            "id":7,
+            "name":"frok top",
+            "description":"This is Red Color Clothe",
+            "price":300,
+            "category":"woman",
+            "images":"c4.jpg"
+        },
+        {
+            "id":8,
+            "name":"frok top",
+            "description":"This is Red Color Clothe",
+            "price":300,
+            "category":"woman",
+            "images":"c5.jpg"
+        }
+    ]
+}
