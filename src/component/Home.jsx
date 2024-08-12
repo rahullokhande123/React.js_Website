@@ -121,7 +121,26 @@ const Home=()=>{
     <h5 style={{textAlign:"center"}}>SHOP BY CATEGORIES</h5>
     <h1 style={{textAlign:"center",fontFamily:"Anton SC sans-serif"}}>Bedsheets you are going to enjoy!</h1>
 
+    
+    {/* ================================= Video ================================ */}
 
+    <Container>
+    <iframe
+                  className='shadow-1-strong rounded'
+                  src='https://www.youtube.com/embed/zumJJUL_ruM?si=FNWQHDQEDyTzAtws" title="YouTube video player'
+                  title='YouTube video'
+                  allowFullScreen
+                  data-gtm-yt-inspected-2340190_699='true'
+                  id='388567449'
+                width="1200px" height="400px" style={{marginLeft:"60px"}} ></iframe>
+    </Container>
+    {/* ========================================================================== */}
+    <Container>
+          <div style={{marginTop:"20px",marginBottom:"20px",textAlign:"center",fontFamily:"Anton SC sans-serif"}}>
+            <h1>Our Products</h1>
+          </div>
+    </Container>
+    
     {/* ================================= Add To Cart ================================== */}
      
     <div style={{display:"flex",justifyContent:"space-between",flexWrap:"wrap", width:"90%",margin:"auto"}}>
