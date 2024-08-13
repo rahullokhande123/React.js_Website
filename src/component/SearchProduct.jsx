@@ -12,7 +12,13 @@ const SearchProduct=()=>{
     const [mydata,setMydata]=useState([]);
     const dispatch= useDispatch();
 
-
+    // const handleChange=(e)=>{
+    //     setVal(e.target.value);
+    //     let api=`http://localhost:3000/product`;
+    //     axios.get(api).then((res)=>{
+    //         setMydata(res.data);
+    //     })
+    // }
 
 
 
