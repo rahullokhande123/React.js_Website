@@ -12,13 +12,9 @@ const SearchProduct=()=>{
     const [mydata,setMydata]=useState([]);
     const dispatch= useDispatch();
 
-    const handleChange=(e)=>{
-        setVal(e.target.value);
-        let api=`http://localhost:3000/product`;
-        axios.get(api).then((res)=>{
-            setMydata(res.data);
-        })
-    }
+
+
+
 
     const DataCart=(pid,nm,img,desc,price)=>{
         dispatch(addtoCart({id:pid,name:nm,images:img,description:desc,qnty:1,price:price}))
@@ -53,7 +49,9 @@ const SearchProduct=()=>{
         <>
         <center>
         <h1 align="center">Search Product</h1>
-        Enter Product <input type="text" value={val} onChange={handleChange} />
+        Enter Product <input type="text" value={val} onChange={(e)=>{setVal(e.target.value)}} />
+
+        <button onClick={Searchhandle}>Search</button>
 
         <hr />
         <div style={{display:"flex",justifyContent:"space-between",flexWrap:"wrap", width:"90%",margin:"auto"}}>
