@@ -2,7 +2,7 @@
     "product":[
         {
             "id":1,
-            "name":"frok top",
+            "name":"top",
             "description":"This is Red Color Clothe",
             "price":300,
             "category":"woman",
@@ -10,7 +10,7 @@
         },
         {
             "id":2,
-            "name":"top1",
+            "name":"top",
             "description":"This is Red Color Clothe",
             "price":300,
             "category":"woman",
@@ -18,7 +18,7 @@
         },
         {
             "id":3,
-            "name":"frok top",
+            "name":"tshirt",
             "description":"This is Red Color Clothe",
             "price":300,
             "category":"woman",
@@ -26,7 +26,7 @@
         },
         {
             "id":4,
-            "name":"frok top",
+            "name":"plazo",
             "description":"This is Red Color Clothe",
             "price":300,
             "category":"woman",
@@ -34,7 +34,7 @@
         },
         {
             "id":5,
-            "name":"frok top",
+            "name":"kurti",
             "description":"This is Red Color Clothe",
             "price":300,
             "category":"woman",
@@ -42,7 +42,7 @@
         },
         {
             "id":6,
-            "name":"frok top",
+            "name":"kurti",
             "description":"This is Red Color Clothe",
             "price":300,
             "category":"woman",
@@ -50,7 +50,7 @@
         },
         {
             "id":7,
-            "name":"frok top",
+            "name":"jens",
             "description":"This is Red Color Clothe",
             "price":300,
             "category":"woman",
