@@ -1,5 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 
 const SearchProduct=()=>{
 
@@ -8,7 +10,7 @@ const SearchProduct=()=>{
 
     const handleChange=(e)=>{
         setVal(e.target.value);
-        let api="http://localhost:3000/product";
+        let api=`http://localhost:3000/product`;
         axios.get(api).then((res)=>{
             setMydata(res.data);
         })
@@ -18,14 +20,37 @@ const SearchProduct=()=>{
         let str=key.name;
         let status=str.includes(val);
         if(status==true){
-            
+
+            return(
+                <>
+          <Card style={{ width: '18rem', margin:"auto",margin:"20px" }}>
+          <Card.Img variant="top" src={key.images} style={{width:"100%",height:"300px"}} />
+          <Card.Body>
+            <Card.Title>{key.name}</Card.Title>
+            <Card.Text>
+              {key.description}
+            </Card.Text>
+            <Card.Text>
+              Price {key.price}
+            </Card.Text>
+            <Button variant="primary" onClick={()=>{DataCart(key.id,key.name,key.images,key.description,key.price)}} >Add To Cart</Button>
+          </Card.Body>
+        </Card>
+    
+                </>
+            )
         }
     })
     return(
         <>
         <center>
         <h1 align="center">Search Product</h1>
-        Enter Product Name: <input type="text" value={val} onChange={handleChange} />
+        Enter Product <input type="text" value={val} onChange={handleChange} />
+
+        <hr />
+        <div style={{display:"flex",justifyContent:"space-between",flexWrap:"wrap", width:"90%",margin:"auto"}}>
+         {ans}
+    </div>
         </center>
         </>
     )
