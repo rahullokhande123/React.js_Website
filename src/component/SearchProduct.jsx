@@ -55,8 +55,6 @@ const SearchProduct=()=>{
         <h1 align="center">Search Product</h1>
         Enter Product <input type="text" value={val} onChange={handleChange} />
 
-        <button onClick={Search}>Search</button>
-
         <hr />
         <div style={{display:"flex",justifyContent:"space-between",flexWrap:"wrap", width:"90%",margin:"auto"}}>
          {ans}
