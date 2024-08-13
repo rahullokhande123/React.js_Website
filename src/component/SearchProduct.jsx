@@ -1,5 +1,8 @@
 import axios from "axios";
 import { useState } from "react";
+import { useDispatch } from 'react-redux';
+import { addtoCart } from "../cartSlice";
+
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
@@ -7,6 +10,7 @@ const SearchProduct=()=>{
 
     const [val,setVal]=useState("");
     const [mydata,setMydata]=useState([]);
+    const dispatch= useDispatch();
 
     const handleChange=(e)=>{
         setVal(e.target.value);
@@ -16,6 +20,10 @@ const SearchProduct=()=>{
         })
     }
 
+    const DataCart=(pid,nm,img,desc,price)=>{
+        dispatch(addtoCart({id:pid,name:nm,images:img,description:desc,qnty:1,price:price}))
+  }
+
     const ans=mydata.map((key)=>{
         let str=key.name;
         let status=str.includes(val);
@@ -24,7 +32,7 @@ const SearchProduct=()=>{
             return(
                 <>
           <Card style={{ width: '18rem', margin:"auto",margin:"20px" }}>
-          <Card.Img variant="top" src={key.images} style={{width:"100%",height:"300px"}} />
+          <Card.Img variant="top" src={"public/"+key.images} style={{width:"100%",height:"300px"}} />
           <Card.Body>
             <Card.Title>{key.name}</Card.Title>
             <Card.Text>
