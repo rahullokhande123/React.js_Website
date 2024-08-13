@@ -20,7 +20,12 @@ const SearchProduct=()=>{
     //     })
     // }
 
-
+    const Searchhandle=()=>{
+      let api=`http://localhost:3000/product`;
+      axios.get(api).then((res)=>{
+                 setMydata(res.data);
+            })
+    }
 
     const DataCart=(pid,nm,img,desc,price)=>{
         dispatch(addtoCart({id:pid,name:nm,images:img,description:desc,qnty:1,price:price}))
