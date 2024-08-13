@@ -54,12 +54,10 @@ const Top=()=>{
           <FaSearch style={{fontSize:"20px",color:"white",marginRight:"15px"}} />
           </div>
           
-
         </Navbar.Collapse>
       </Container>
     </Navbar>
- 
-
+    
         </>
     )
 }
