@@ -57,15 +57,15 @@ const Home=()=>{
 
    <Carousel>
       <Carousel.Item>
-        <a href="#"> <img src="public/r3.jpg"  width="100%" height="650px" /> </a>
+        <a href="#"> <img src="public/dish1.jpg"  width="100%" height="650px" /> </a>
         
         <Carousel.Caption>
-          <h3>First slide label</h3>
-           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3>Hurry up !!!</h3>
+           <p>Sale For Only August Month With 20% Discount </p>
          </Carousel.Caption>
        </Carousel.Item>
        <Carousel.Item>
-         <a href="#"> <img src='public/r4.jpg' width="100%" height="650px" /> </a>
+         <a href="#"> <img src='public/dish2.jpg' width="100%" height="650px" /> </a>
         
          <Carousel.Caption>
            <h3>Second slide label</h3>
@@ -73,7 +73,7 @@ const Home=()=>{
         </Carousel.Caption>
        </Carousel.Item>
        <Carousel.Item>
-       <a href="#"> <img src='public/r5.jpg' width="100%" height="650px" /> </a>
+       <a href="#"> <img src='public/dish3.jpg' width="100%" height="650px" /> </a>
          <Carousel.Caption>
            <h3>Third slide label</h3>
            <p>
@@ -83,7 +83,7 @@ const Home=()=>{
        </Carousel.Item>
 
        <Carousel.Item>
-       <a href="#"> <img src='public/r6.jpg' width="100%" height="650px" /> </a>
+       <a href="#"> <img src='public/dish4.png' width="100%" height="650px" /> </a>
          <Carousel.Caption>
            <h3>Third slide label</h3>
            <p>
