@@ -93,7 +93,7 @@ const Home=()=>{
        </Carousel.Item>
 
        <Carousel.Item>
-       <a href="#"> <img src='public/r8.jpg' width="100%" height="650px" /></a>
+       <a href="#"> <img src='public/dish5.jpg' width="100%" height="650px" /></a>
          <Carousel.Caption>
            <h3>Third slide label</h3>
          <p>
