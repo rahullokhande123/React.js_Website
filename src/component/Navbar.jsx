@@ -26,7 +26,7 @@ const Top=()=>{
     return(
         <>
       <Navbar expand="lg" className="bg-body-tertiary" style={{position:"sticky",top:0,zIndex:"3"}} >
-      <Container fluid style={{backgroundColor:"black"}}>
+      <Container fluid style={{color:""}}>
         <Navbar.Brand href="#" style={{fontSize:"30px", color:"white",fontFamily:"Anton SC sans-serif"}}>Home Decoration</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" style={{color:"white"}} />
         <Navbar.Collapse id="navbarScroll" style={{color:"white"}}>
