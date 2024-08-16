@@ -40,24 +40,13 @@ const Home=()=>{
         return(
             <>
       <Card style={{ width: '18rem', margin:"auto",margin:"20px" }}>
-      <Card.Img variant="top" src={key.images} style={{width:"100%",height:"300px"}} />
+      <Card.Img variant="top" onClick={()=>{dataSendCart(key)}}  src={key.images} 
+      style={{width:"100%",height:"300px"}} />
       <Card.Body>
-
-
-
-
 
         <Card.Title style={{color:"blue",fontSize:'30px'}} onClick={()=>{dataSendCart(key)}} > 
           <a href="" style={{textDecoration:"none"}}>{key.name}</a>
           </Card.Title>
-
-
-
-
-
-
-
-
 
         <Card.Text>
           {key.description}
@@ -65,7 +54,7 @@ const Home=()=>{
         <Card.Text>
           Price {key.price}
         </Card.Text>
-        <Button variant="primary" onClick={()=>{DataCart(key.id,key.name,key.images,key.description,key.price)}} >Add To Cart</Button>
+        <Button variant="success" onClick={()=>{DataCart(key.id,key.name,key.images,key.description,key.price)}} >Add To Cart</Button>
       </Card.Body>
     </Card>
 
@@ -142,6 +131,23 @@ const Home=()=>{
 
     <h5 style={{textAlign:"center"}}>SHOP BY CATEGORIES</h5>
     <h1 style={{textAlign:"center",fontFamily:"Anton SC sans-serif"}}>Bedsheets you are going to enjoy!</h1>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     
     {/* ================================= Video ================================ */}
