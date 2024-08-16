@@ -26,24 +26,24 @@ const Top=()=>{
     return(
         <>
       <Navbar expand="lg" className="bg-body-tertiary" style={{position:"sticky",top:0,zIndex:"3"}} >
-      <Container fluid style={{color:""}}>
-        <Navbar.Brand href="#" style={{fontSize:"30px", color:"white",fontFamily:"Anton SC sans-serif"}}>Home Decoration</Navbar.Brand>
+      <Container fluid style={{backgroundColor:"yellowgreen"}}>
+        <Navbar.Brand href="#" style={{fontSize:"30px", color:"black",fontFamily:"Anton SC sans-serif"}}>Home Decoration</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" style={{color:"white"}} />
-        <Navbar.Collapse id="navbarScroll" style={{color:"white"}}>
+        <Navbar.Collapse id="navbarScroll" style={{color:"black"}}>
           <Nav
             className="me-auto my-2 my-lg-0"
-            style={{ maxHeight: '100px', color:"white" }}
+            style={{ maxHeight: '100px', color:"black" }}
             navbarScroll
           >
-            <Nav.Link as={Link} to="home" style={{color:"white"}} >Home</Nav.Link>
-            <Nav.Link as={Link} to="cartproduct" style={{color:"white"}}>My Cart</Nav.Link>
-            <Nav.Link as={Link} to="searchproduct" style={{color:"white"}}>
+            <Nav.Link as={Link} to="home" style={{color:"black"}} >Home</Nav.Link>
+            <Nav.Link as={Link} to="cartproduct" style={{color:"black"}}>My Cart</Nav.Link>
+            <Nav.Link as={Link} to="searchproduct" style={{color:"black"}}>
             Search
             </Nav.Link>
           </Nav>
 
           <div>
-            <TiShoppingCart style={{fontSize:"30px",color:"white",marginRight:"15px"}} onClick={changeNavigate} />
+            <TiShoppingCart style={{fontSize:"30px",color:"black",marginRight:"15px"}} onClick={changeNavigate} />
           </div>
           
           <div id="cartlogo" style={{fontSize:"15px",position:"absolute",marginLeft:"1215px",top:"10px",Right:"0px"}} >
@@ -51,7 +51,7 @@ const Top=()=>{
           </div>
            
           <div>
-          <FaSearch style={{fontSize:"20px",color:"white",marginRight:"15px"}} />
+          <FaSearch style={{fontSize:"20px",color:"black",marginRight:"15px"}} />
           </div>
           
         </Navbar.Collapse>
