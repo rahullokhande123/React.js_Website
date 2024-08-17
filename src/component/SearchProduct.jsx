@@ -41,7 +41,7 @@ const SearchProduct=()=>{
             <Card.Text>
               Price {key.price}
             </Card.Text>
-            <Button variant="primary" onClick={()=>{DataCart(key.id,key.name,key.images,key.description,key.price)}} >Add To Cart</Button>
+            <Button variant="success" onClick={()=>{DataCart(key.id,key.name,key.images,key.description,key.price)}} >Add To Cart</Button>
           </Card.Body>
         </Card>
     

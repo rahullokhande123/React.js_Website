@@ -18,4 +18,11 @@
 #productData{
     display: flex;
 }
+#panipuri{
+    display: flex;
+}
+#panipuri div{
+    color: white;
+    margin-top: 150px;
+}
 

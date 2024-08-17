@@ -3,8 +3,8 @@
         {
             "id":1,
             "name":"Pizza",
-            "description":"This is Red Color Clothe",
-            "price":300,
+            "description":"Delicious Pizza On 25% OFF",
+            "price":179,
             "category":"pizza",
             "images":"pizza1.jpg"
         },
@@ -18,11 +18,11 @@
         },
         {
             "id":3,
-            "name":"Mix Veg",
-            "description":"Mix Veg Dish",
-            "price":160,
-            "category":"mixveg",
-            "images":"mix-veg.jpg"
+            "name":"Chicken",
+            "description":" Chily Kadhai Chicken ",
+            "price":180,
+            "category":"nonveg",
+            "images":"chicken1.jpg"
         },
         {
             "id":4,
@@ -42,27 +42,27 @@
         },
         {
             "id":6,
-            "name":"kurti",
-            "description":"This is Red Color Clothe",
-            "price":300,
-            "category":"woman",
-            "images":"c3.jpg"
+            "name":"Sendwich Bread",
+            "description":"Lazziz Tasty Bread Sendwich",
+            "price":149,
+            "category":"chinese",
+            "images":"sendwich1.jpg"
         },
         {
             "id":7,
-            "name":"jens",
-            "description":"This is Red Color Clothe",
-            "price":300,
-            "category":"woman",
-            "images":"c4.jpg"
+            "name":"Spicy Noodles",
+            "description":"Spicy Hot Chili Noodles",
+            "price":120,
+            "category":"chinese",
+            "images":"noodles1.jpg"
         },
         {
             "id":8,
-            "name":"frok top",
-            "description":"This is Red Color Clothe",
-            "price":300,
-            "category":"woman",
-            "images":"c5.jpg"
+            "name":"Mix Veg",
+            "description":"Mix veg",
+            "price":165,
+            "category":"veg",
+            "images":"mix-veg.jpg"
         }
     ]
 }

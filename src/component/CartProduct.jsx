@@ -32,7 +32,7 @@ const CartProduct=()=>{
                 <td> <img src={"public/"+key.images}  width="100" height="80" /></td>
                 <td>{key.name}</td>
                 <td>{key.description}</td>
-                <td>{key.price}</td>
+                <td>{key.price} </td>
                 <td>
 
                     <a href="#"> 

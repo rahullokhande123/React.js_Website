@@ -172,46 +172,30 @@ const Home=()=>{
       </Row>
     </Container>
 
-    {/* <video src="/public/video4.mp4" autoPlay muted loop controls style={{position:"sticky", zIndex:-1,top:0,height:"600px",width:"2000px"}}>
-    
-    </video> */}
-
     {/* ================================= Video ================================ */}
-
-    {/* <Container>
-    <iframe
-                  className='shadow-1-strong rounded'
-                  src="https://www.youtube.com/embed/kqZpPAGltvw?si=HVVtCUy0JRA79ra-" 
-                  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                  data-gtm-yt-inspected-2340190_699='true'
-                  id='388567449'
-                width="1200px" height="400px" style={{marginLeft:"60px"}} ></iframe>
-    </Container> */}
-
 
     {/* <video style={{marginLeft:"400px",position:"sticky", zIndex:2}} src="/public/video2.mp4" autoPlay muted loop controls width="700px" height="400px"></video> */}
     <video src="/public/video4.mp4" autoPlay muted loop controls style={{position:"sticky", zIndex:-1,top:0}}>
-    
     </video>
 
-    {/* ========================================================================== */}
+{/* =========================== Panipuri =================== */}
+    <div id='panipuri'>
+      <img style={{border:"1px solid black",borderRadius:"2%",margin:"50px"}} src="/public/panipuri1.jpg" width="800px" height="500px" />
+      <div >
+          <h1>Enjoy Your Day With Panipuri</h1>
+          <h5>Absulatly Free,Only For Today</h5>
+          <h3> Visit Now !!! </h3>
+      </div>
+      
+    </div>
+
+    {/* ============================ Our Product ========================== */}
     <Container>
-          <div style={{marginTop:"20px",marginBottom:"20px",textAlign:"center",fontFamily:"Anton SC sans-serif"}}>
+          <div style={{color:"white",marginTop:"20px",marginBottom:"20px",textAlign:"center",fontFamily:"Anton SC sans-serif"}}>
             <h1>Our Products</h1>
           </div>
     </Container>
-    
-
-
-
-
-
-
-
-
-
-    
+ 
     {/* ================================= Add To Cart ================================== */}
      
     <div style={{display:"flex",justifyContent:"space-between",flexWrap:"wrap", width:"90%",margin:"auto"}}>
