@@ -47,7 +47,7 @@ const CartProduct=()=>{
                     </a>
     
                   </td>
-                  <td> {key.price*key.qnty}  </td>
+                  <td> {key.price*key.qnty} Rs. </td>
                 <td> <Button variant="secondary" size="sm" onClick={()=>{cartRecDel(key.id)}}>Delete</Button></td>
             </tr>
             </>
