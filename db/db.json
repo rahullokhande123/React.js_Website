@@ -2,43 +2,43 @@
     "product":[
         {
             "id":1,
-            "name":"top",
+            "name":"Pizza",
             "description":"This is Red Color Clothe",
             "price":300,
-            "category":"woman",
-            "images":"b1.jpg"
+            "category":"pizza",
+            "images":"pizza1.jpg"
         },
         {
             "id":2,
-            "name":"top",
-            "description":"This is Red Color Clothe",
-            "price":300,
-            "category":"woman",
-            "images":"b2.jpg"
+            "name":"Burger",
+            "description":"Burger With Snackes",
+            "price":149,
+            "category":"burger",
+            "images":"burger1.jpg"
         },
         {
             "id":3,
-            "name":"tshirt",
-            "description":"This is Red Color Clothe",
-            "price":300,
-            "category":"woman",
-            "images":"b3.jpg"
+            "name":"Mix Veg",
+            "description":"Mix Veg Dish",
+            "price":160,
+            "category":"mixveg",
+            "images":"mix-veg.jpg"
         },
         {
             "id":4,
-            "name":"plazo",
-            "description":"This is Red Color Clothe",
-            "price":300,
-            "category":"woman",
-            "images":"c1.jpg"
+            "name":"French Fries",
+            "description":"Yummi French Fries",
+            "price":120,
+            "category":"french",
+            "images":"french1.jpg"
         },
         {
             "id":5,
-            "name":"kurti",
+            "name":"Dilux Thari",
             "description":"This is Red Color Clothe",
-            "price":300,
-            "category":"woman",
-            "images":"c2.jpg"
+            "price":249,
+            "category":"veg",
+            "images":"veg1.jpg"
         },
         {
             "id":6,

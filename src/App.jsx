@@ -277,9 +277,9 @@ const App=()=>{
 
 
 import { BrowserRouter,Routes,Route } from "react-router-dom"
-import Layout from "./Laylout"
+import Layout from "./Laylout";
 import Home from "./component/Home";
-import CartProduct from "./CartProduct";
+import CartProduct from "./component/CartProduct";
 import SearchProduct from "./component/SearchProduct";
 import ProductDisplay from "./component/ProductDisplay";
 

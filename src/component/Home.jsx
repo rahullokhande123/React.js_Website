@@ -10,6 +10,10 @@ import { useDispatch } from 'react-redux';
 import { addtoCart } from '../cartSlice';
 import { Navigate, useNavigate } from 'react-router-dom';
 
+import Col from 'react-bootstrap/Col';
+import Image from 'react-bootstrap/Image';
+import Row from 'react-bootstrap/Row';
+
 
 const Home=()=>{
     //  ======================== Add To Cart Functionality ==========================
@@ -52,7 +56,7 @@ const Home=()=>{
           {key.description}
         </Card.Text>
         <Card.Text>
-          Price {key.price}
+          Price {key.price} Rs.
         </Card.Text>
         <Button variant="success" onClick={()=>{DataCart(key.id,key.name,key.images,key.description,key.price)}} >Add To Cart</Button>
       </Card.Body>
@@ -68,7 +72,8 @@ const Home=()=>{
 
    <Carousel>
       <Carousel.Item>
-        <a href="#"> <img src="public/dish1.jpg"  width="100%" height="650px" /> </a>
+      <img src="public/dish1.jpg"  width="100%" height="650px" /> 
+      {/* <video src="/public/video1.mp4" autoPlay muted  controls height="400px"></video> */}
         
         <Carousel.Caption>
           <h3>Hurry up !!!</h3>
@@ -76,7 +81,7 @@ const Home=()=>{
          </Carousel.Caption>
        </Carousel.Item>
        <Carousel.Item>
-         <a href="#"> <img src='public/dish2.jpg' width="100%" height="650px" /> </a>
+         <img src='public/dish6.jpg' width="100%" height="650px" />
         
          <Carousel.Caption>
            <h3>Second slide label</h3>
@@ -84,7 +89,7 @@ const Home=()=>{
         </Carousel.Caption>
        </Carousel.Item>
        <Carousel.Item>
-       <a href="#"> <img src='public/dish3.jpg' width="100%" height="650px" /> </a>
+       <img src='public/dish3.jpg' width="100%" height="650px" />
          <Carousel.Caption>
            <h3>Third slide label</h3>
            <p>
@@ -94,7 +99,7 @@ const Home=()=>{
        </Carousel.Item>
 
        <Carousel.Item>
-       <a href="#"> <img src='public/dish4.png' width="100%" height="650px" /> </a>
+       <img src='public/dish4.png' width="100%" height="650px" />
          <Carousel.Caption>
            <h3>Third slide label</h3>
            <p>
@@ -104,7 +109,7 @@ const Home=()=>{
        </Carousel.Item>
 
        <Carousel.Item>
-       <a href="#"> <img src='public/dish5.jpg' width="100%" height="650px" /></a>
+       <img src='public/dish5.jpg' width="100%" height="650px" />
          <Carousel.Caption>
            <h3>Third slide label</h3>
          <p>
@@ -116,8 +121,9 @@ const Home=()=>{
 
      {/* ================================= First Hero Section ================================ */}
 
-     <div style={{margin:"80px", display:"flex"}}>
-    <img src='/src/images/m8.jpg' width="600px" height="600px" />
+     <div style={{margin:"100px", display:"flex"}}>
+    {/* <img src='/src/images/m8.jpg' width="600px" height="600px" /> */}
+    <video src="/public/video1.mp4" autoPlay muted loop controls width="500px" height="500px"></video>
     <div style={{margin:"100px"}}>
     <h1 style={{fontFamily:"Anton SC sans-serif"}}>Enjoy your bed time <br />
     like never before!</h1>
@@ -129,39 +135,66 @@ const Home=()=>{
     </div>
     </div>
 
-    <h5 style={{textAlign:"center"}}>SHOP BY CATEGORIES</h5>
-    <h1 style={{textAlign:"center",fontFamily:"Anton SC sans-serif"}}>Bedsheets you are going to enjoy!</h1>
+  {/* ============================== Categories ============================= */}
 
+    <h5 style={{textAlign:"center"}}>ORDER BY CATEGORIES</h5>
+    <h1 style={{textAlign:"center",fontFamily:"Anton SC sans-serif"}}>Choose Your Dish And Going To Enjoy!</h1>
+
+    <Container style={{margin:"50px",textAlign:"center",marginLeft:"80px"}}>
+      <Row style={{display:"flex"}}>
+      <Col xs={6} md={4}>
+          <a href="#"><Image src="/public/dish1.jpg" width="300px" height="300px" roundedCircle /></a> <br />
+          <div style={{margin:"40px"}}>
+      
+            <h2 >Breakfast</h2>
+          
+          {/* <a href="#">21 items</a> */}
+          </div>
+        </Col>
+        <Col xs={6} md={4}>
+        <a href="#"><Image src="/public/dish2.jpg" width="300px" height="300px" roundedCircle /></a>
+        <div style={{margin:"40px"}}>
+          
+        <h2 >Lunch</h2>
+
+          {/* <a href="#">21 items</a> */}
+          </div>
+        </Col>
+        <Col xs={6} md={4}>
+        <a href="#"><Image src="/public/dish3.jpg" width="300px" height="300px" roundedCircle /></a>
+        <div style={{margin:"40px"}}>
+          
+        <h2 >Dinner</h2>
+
+          {/* <a href="#">21 items</a> */}
+          </div>
+        </Col>
+      </Row>
+    </Container>
+
+    {/* <video src="/public/video4.mp4" autoPlay muted loop controls style={{position:"sticky", zIndex:-1,top:0,height:"600px",width:"2000px"}}>
     
+    </video> */}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
     {/* ================================= Video ================================ */}
 
-    <Container>
+    {/* <Container>
     <iframe
                   className='shadow-1-strong rounded'
-                  src='https://www.youtube.com/embed/zumJJUL_ruM?si=FNWQHDQEDyTzAtws" title="YouTube video player'
-                  title='YouTube video'
+                  src="https://www.youtube.com/embed/kqZpPAGltvw?si=HVVtCUy0JRA79ra-" 
+                  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
                   data-gtm-yt-inspected-2340190_699='true'
                   id='388567449'
                 width="1200px" height="400px" style={{marginLeft:"60px"}} ></iframe>
-    </Container>
+    </Container> */}
+
+
+    {/* <video style={{marginLeft:"400px",position:"sticky", zIndex:2}} src="/public/video2.mp4" autoPlay muted loop controls width="700px" height="400px"></video> */}
+    <video src="/public/video4.mp4" autoPlay muted loop controls style={{position:"sticky", zIndex:-1,top:0}}>
+    
+    </video>
+
     {/* ========================================================================== */}
     <Container>
           <div style={{marginTop:"20px",marginBottom:"20px",textAlign:"center",fontFamily:"Anton SC sans-serif"}}>
@@ -169,13 +202,22 @@ const Home=()=>{
           </div>
     </Container>
     
+
+
+
+
+
+
+
+
+
+    
     {/* ================================= Add To Cart ================================== */}
      
     <div style={{display:"flex",justifyContent:"space-between",flexWrap:"wrap", width:"90%",margin:"auto"}}>
          {ans}
     </div>   
        
-
         </>
     )
 }

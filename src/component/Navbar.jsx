@@ -27,7 +27,8 @@ const Top=()=>{
         <>
       <Navbar expand="lg" className="bg-body-tertiary" style={{position:"sticky",top:0,zIndex:"3"}} >
       <Container fluid style={{backgroundColor:"yellowgreen"}}>
-        <Navbar.Brand href="#" style={{fontSize:"30px", color:"black",fontFamily:"Anton SC sans-serif"}}>Home Decoration</Navbar.Brand>
+        {/* <Navbar.Brand href="#" style={{fontSize:"30px", color:"black",fontFamily:"Anton SC sans-serif"}}>Home Decoration</Navbar.Brand> */}
+        <img style={{marginLeft:"20px",marginRight:"30px",marginTop:"5px",marginBottom:'5px'}} src="/public/Logo.png" width="150px" height="100px" />
         <Navbar.Toggle aria-controls="navbarScroll" style={{color:"white"}} />
         <Navbar.Collapse id="navbarScroll" style={{color:"black"}}>
           <Nav
@@ -35,23 +36,23 @@ const Top=()=>{
             style={{ maxHeight: '100px', color:"black" }}
             navbarScroll
           >
-            <Nav.Link as={Link} to="home" style={{color:"black"}} >Home</Nav.Link>
-            <Nav.Link as={Link} to="cartproduct" style={{color:"black"}}>My Cart</Nav.Link>
-            <Nav.Link as={Link} to="searchproduct" style={{color:"black"}}>
+            <Nav.Link as={Link} to="home" style={{color:"black",fontSize:"20px",marginLeft:"10px"}} >Home</Nav.Link>
+            <Nav.Link as={Link} to="cartproduct" style={{color:"black",fontSize:"20px",marginLeft:"10px"}}>My Cart</Nav.Link>
+            <Nav.Link as={Link} to="searchproduct" style={{color:"black",fontSize:"20px",marginLeft:"10px"}}>
             Search
             </Nav.Link>
           </Nav>
 
           <div>
-            <TiShoppingCart style={{fontSize:"30px",color:"black",marginRight:"15px"}} onClick={changeNavigate} />
+            <TiShoppingCart style={{fontSize:"30px",color:"black",marginRight:"25px"}} onClick={changeNavigate} />
           </div>
           
-          <div id="cartlogo" style={{fontSize:"15px",position:"absolute",marginLeft:"1215px",top:"10px",Right:"0px"}} >
-          {dataLength>=1? <div style={{marginRight:"15px"}}>{dataLength}</div> : "" }
+          <div id="cartlogo" style={{fontSize:"18px",position:"absolute",marginLeft:"1195px",top:"30px",Right:"0px"}} >
+          {dataLength>=1? <div style={{marginRight:"15px"}}><b>{dataLength}</b></div> : "" }
           </div>
            
           <div>
-          <FaSearch style={{fontSize:"20px",color:"black",marginRight:"15px"}} />
+          <FaSearch style={{fontSize:"20px",color:"black",marginRight:"55px"}} />
           </div>
           
         </Navbar.Collapse>
