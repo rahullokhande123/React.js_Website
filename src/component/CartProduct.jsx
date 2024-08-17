@@ -77,7 +77,7 @@ const CartProduct=()=>{
           <th></th>
           <th></th>
           <th>Total Amount</th>
-          <th>{totalAmount}</th>
+          <th>{totalAmount} Rs.</th>
         </tr>
       </Table>
         </>
