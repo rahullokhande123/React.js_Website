@@ -32,7 +32,7 @@ const CartProduct=()=>{
                 <td> <img src={"public/"+key.images}  width="100" height="80" /></td>
                 <td>{key.name}</td>
                 <td>{key.description}</td>
-                <td>{key.price} </td>
+                <td>{key.price} Rs.</td>
                 <td>
 
                     <a href="#"> 
@@ -47,7 +47,7 @@ const CartProduct=()=>{
                     </a>
     
                   </td>
-                  <td> {key.price*key.qnty} </td>
+                  <td> {key.price*key.qnty}  </td>
                 <td> <Button variant="secondary" size="sm" onClick={()=>{cartRecDel(key.id)}}>Delete</Button></td>
             </tr>
             </>
