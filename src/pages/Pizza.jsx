@@ -21,21 +21,27 @@ const Pizza=()=>{
         return(
             <>
                 <tr>
+                    <div style={{display:"flex"}}>
+                        <div>
+                            <td>
+                                 <img src={key.images} style={{width:"200px"}} />
+                            </td>
+                        </div>
+                        <div>
+                            <td>
+                                 <h1>{key.name}</h1>
+                            </td> <br />
+                            <td>
+                                 <h4>{key.description}</h4>
+                            </td> <br />
+                            <td>
+                                 <h5>Price: {key.price}</h5>
+                            </td>
                     
-                   <td>
-                        <img src={key.images} style={{width:"200px"}} />
-                    </td>
-                    <td>
-                        <h1>{key.name}</h1>
-                    </td> <br />
-                    <td>
-                        <h4>{key.description}</h4>
-                    </td>
-                    <td>
-                        <h5>{key.price}</h5>
-                    </td>
-                    
-                    <td>{key.category}</td>
+                                 <td>{key.category}</td>
+                        </div>
+                    </div>
+                   
                 </tr>
             </>
         )
