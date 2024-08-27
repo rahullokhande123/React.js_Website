@@ -25,4 +25,10 @@
     color: white;
     margin-top: 150px;
 }
+#vegItem{
+    margin-left: 15%;
+    width: 280px;
+    height: 330px;
+    border: 2px solid white;
+}
 

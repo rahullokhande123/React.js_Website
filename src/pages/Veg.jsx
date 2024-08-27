@@ -29,13 +29,13 @@ const Veg=()=>{
         return(
             <>
                 <tr>
-                    <div style={{display:"flex"}}>
-                        <div>
+                    <div style={{display:"flex",marginTop:"5%"}}>
+                        <div id="vegImgDiv">
                             <td>
-                                 <img src={key.images} style={{width:"280px",height:"330px",margin:"20%",border:"2px solid white",borderRadius:"5%"}} />
+                                 <img id="vegItem" src={key.images} />
                             </td>
                         </div>
-                        <div style={{marginLeft:"120px",marginTop:"10%"}}>
+                        <div style={{marginLeft:"100px",marginTop:"10%"}}>
                             <td>
                                  <h1>{key.name}</h1>
                             </td> <br />
