@@ -282,6 +282,7 @@ import Home from "./component/Home";
 import CartProduct from "./component/CartProduct";
 import SearchProduct from "./component/SearchProduct";
 import ProductDisplay from "./component/ProductDisplay";
+import Pizza from "./pages/Pizza";
 
 const App=()=>{
 
@@ -296,6 +297,7 @@ const App=()=>{
                              <Route path="cartproduct" element={<CartProduct/>}/>
                              <Route path="searchproduct" element={<SearchProduct/>}/>
                              <Route path="productdisplay" element={<ProductDisplay/>}/>
+                             <Route path="pizza" element={<Pizza/>}/>
                         
                      </Route>
               </Routes>       

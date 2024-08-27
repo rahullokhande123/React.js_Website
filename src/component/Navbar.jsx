@@ -54,7 +54,7 @@ const Top=()=>{
               title="Category"
               menuVariant="dark"
             >
-              <NavDropdown.Item as={Link} to="#action/3.1">Pizza</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="pizza">Pizza</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="#action/3.2">
                 Burger
               </NavDropdown.Item>
