@@ -1,11 +1,15 @@
 
 import axios from "axios";
 import { useState,useEffect } from "react";
+import Button from 'react-bootstrap/Button';
+import { useDispatch } from "react-redux";
+import { addtoCart } from "../cartSlice";
 
 
 const Pizza=()=>{
 
     const [mypizza,setMypizza]=useState([]);
+    const dispatch=useDispatch();
 
     const loadPizza=()=>{
         let api=`http://localhost:3000/product?category=pizza`;
@@ -17,6 +21,10 @@ const Pizza=()=>{
          loadPizza();
     },[])
 
+    const DataCart=(pid, nm, img, desc, price)=>{
+        dispatch(addtoCart({id: pid, name:nm, images:img, description:desc,qnty:1,  price:price}))
+    }
+
     const ans=mypizza.map((key)=>{
         return(
             <>
@@ -24,10 +32,10 @@ const Pizza=()=>{
                     <div style={{display:"flex"}}>
                         <div>
                             <td>
-                                 <img src={key.images} style={{width:"200px"}} />
+                                 <img src={key.images} style={{width:"280px",height:"330px",margin:"20%",border:"2px solid white",borderRadius:"5%"}} />
                             </td>
                         </div>
-                        <div>
+                        <div style={{marginLeft:"120px",marginTop:"10%"}}>
                             <td>
                                  <h1>{key.name}</h1>
                             </td> <br />
@@ -35,10 +43,13 @@ const Pizza=()=>{
                                  <h4>{key.description}</h4>
                             </td> <br />
                             <td>
-                                 <h5>Price: {key.price}</h5>
-                            </td>
+                                 <h5>Price: {key.price} Rs.</h5>
+                            </td> <br />
                     
-                                 <td>{key.category}</td>
+                                 {/* <td>{key.category}</td> */}
+                            <td>
+                                 <Button variant="outline-dark" onClick={()=>{DataCart(key.id, key.name, key.images, key.description, key.price)}}>Add To Cart</Button>
+                            </td>
                         </div>
                     </div>
                    
@@ -48,8 +59,6 @@ const Pizza=()=>{
     })
     return(
         <>
-        <h1>Pizza</h1>
-      
          <div>
             {ans}
          </div>
