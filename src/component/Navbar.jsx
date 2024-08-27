@@ -60,7 +60,7 @@ const Top=()=>{
               </NavDropdown.Item>
               <NavDropdown.Item as={Link} to="#action/3.3">Nonveg</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="#action/3.3">French</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="#action/3.3">Veg</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="veg">Veg</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="#action/3.3">Chinese</NavDropdown.Item>
               <NavDropdown.Divider />
 
