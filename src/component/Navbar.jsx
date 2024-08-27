@@ -51,18 +51,19 @@ const Top=()=>{
           <Nav>
             <NavDropdown
               id="nav-dropdown-dark-example"
-              title="Dropdown"
+              title="Category"
               menuVariant="dark"
             >
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
+              <NavDropdown.Item as={Link} to="#action/3.1">Pizza</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="#action/3.2">
+                Burger
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="#action/3.3">Nonveg</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="#action/3.3">French</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="#action/3.3">Veg</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="#action/3.3">Chinese</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
+
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
