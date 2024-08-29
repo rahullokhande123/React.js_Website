@@ -35,7 +35,7 @@ const ProductDisplay=(props)=>{
         <>
         <div id="productData">
         <div>
-            <img src={`/public/${myPro.images}`} style={{width:"300px",height:"350px",margin:"30px"}} />
+            <img src={myPro.images} style={{width:"300px",height:"350px",margin:"30px"}} />
         </div>
         <div style={{margin:"40px",marginTop:"60px"}}>
         <h1>Product Name: {myPro.name}</h1>
