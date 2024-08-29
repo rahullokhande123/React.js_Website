@@ -14,6 +14,13 @@ import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
 
+import img2 from "../../public/dish1.jpg";
+import img3 from "../../public/dish6.jpg";
+import img4 from "../../public/dish3.jpg";
+import img5 from "../../public/dish4.png";
+import img6 from "../../public/dish5.jpg";
+import video1 from "../../public/video1.mp4";
+
 
 const Home=()=>{
     //  ======================== Add To Cart Functionality ==========================
@@ -72,7 +79,7 @@ const Home=()=>{
 
    <Carousel>
       <Carousel.Item>
-      <img src="public/dish1.jpg"  width="100%" height="650px" /> 
+      <img src={img2}  width="100%" height="650px" /> 
       {/* <video src="/public/video1.mp4" autoPlay muted  controls height="400px"></video> */}
         
         <Carousel.Caption>
@@ -81,7 +88,7 @@ const Home=()=>{
          </Carousel.Caption>
        </Carousel.Item>
        <Carousel.Item>
-         <img src='public/dish6.jpg' width="100%" height="650px" />
+         <img src={img3} width="100%" height="650px" />
         
          <Carousel.Caption>
            <h3>Second slide label</h3>
@@ -89,7 +96,7 @@ const Home=()=>{
         </Carousel.Caption>
        </Carousel.Item>
        <Carousel.Item>
-       <img src='public/dish3.jpg' width="100%" height="650px" />
+       <img src={img4} width="100%" height="650px" />
          <Carousel.Caption>
            <h3>Third slide label</h3>
            <p>
@@ -99,7 +106,7 @@ const Home=()=>{
        </Carousel.Item>
 
        <Carousel.Item>
-       <img src='public/dish4.png' width="100%" height="650px" />
+       <img src={img5} width="100%" height="650px" />
          <Carousel.Caption>
            <h3>Third slide label</h3>
            <p>
@@ -109,7 +116,7 @@ const Home=()=>{
        </Carousel.Item>
 
        <Carousel.Item>
-       <img src='public/dish5.jpg' width="100%" height="650px" />
+       <img src={img6} width="100%" height="650px" />
          <Carousel.Caption>
            <h3>Third slide label</h3>
          <p>
@@ -122,8 +129,7 @@ const Home=()=>{
      {/* ================================= First Hero Section ================================ */}
 
      <div style={{margin:"100px", display:"flex"}}>
-    {/* <img src='/src/images/m8.jpg' width="600px" height="600px" /> */}
-    <video src="/public/video1.mp4" autoPlay muted loop controls width="500px" height="500px"></video>
+    <video src={video1} autoPlay muted loop controls width="500px" height="500px"></video>
     <div style={{margin:"100px"}}>
     <h1 style={{fontFamily:"Anton SC sans-serif"}}>Enjoy your bed time <br />
     like never before!</h1>
