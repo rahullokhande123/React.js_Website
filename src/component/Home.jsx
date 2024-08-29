@@ -172,7 +172,7 @@ const Home=()=>{
           </div>
         </Col>
         <Col xs={6} md={4}>
-        <a href="#"><Image src= width="300px" height="300px" roundedCircle /></a>
+        <a href="#"><Image src={img9} width="300px" height="300px" roundedCircle /></a>
         <div style={{margin:"40px"}}>
           
         <h2 >Dinner</h2>
