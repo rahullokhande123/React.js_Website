@@ -14,7 +14,7 @@
             "description":"Burger With Snackes",
             "price":149,
             "category":"burger",
-            "images":"burger1.jpg"
+            "images":"https://cdn.pixabay.com/photo/2023/10/08/13/03/ai-generated-8302143_960_720.jpg"
         },
         {
             "id":3,
