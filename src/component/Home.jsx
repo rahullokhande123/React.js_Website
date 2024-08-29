@@ -154,7 +154,7 @@ const Home=()=>{
     <Container style={{margin:"50px",textAlign:"center",marginLeft:"80px"}}>
       <Row style={{display:"flex"}}>
       <Col xs={6} md={4}>
-          <a href="#"><Image src= width="300px" height="300px" roundedCircle /></a> <br />
+          <a href="#"><Image src={img7} width="300px" height="300px" roundedCircle /></a> <br />
           <div style={{margin:"40px"}}>
       
             <h2 >Breakfast</h2>
