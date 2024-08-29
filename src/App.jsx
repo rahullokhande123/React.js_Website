@@ -285,7 +285,7 @@ import ProductDisplay from "./component/ProductDisplay";
 import Pizza from "./pages/Pizza";
 import Burger from "./pages/Burger";
 import Veg from "./pages/Veg";
-
+import CheckOut from "./pages/CheckOutProduct";
 
 const App=()=>{
 
