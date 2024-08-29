@@ -191,7 +191,7 @@ const Home=()=>{
 
 {/* =========================== Panipuri =================== */}
     <div id='panipuri'>
-      <img style={{border:"1px solid black",borderRadius:"2%",margin:"50px"}} src= width="800px" height="500px" />
+      <img style={{border:"1px solid black",borderRadius:"2%",margin:"50px"}} src={img10} width="800px" height="500px" />
       <div >
           <h1>Enjoy Your Day With Panipuri</h1>
           <h5>Absulatly Free,Only For Today</h5>
