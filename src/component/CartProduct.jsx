@@ -5,12 +5,12 @@ import { cartrecDel,addQnty,DelQnty } from "../cartSlice";
 
 import { FaPlusCircle } from "react-icons/fa";
 import { FaMinusCircle } from "react-icons/fa";
-
+import { useNavigate } from "react-router-dom";
 
 const CartProduct=()=>{
     const mycart=useSelector((state)=>state.mycart.cart);
     const dispatch=useDispatch();
-   
+    const navigate=useNavigate();
 
     const cartRecDel=(id)=>{
         dispatch(cartrecDel(id));
@@ -85,7 +85,7 @@ const CartProduct=()=>{
       </Table>
 {/* ============================ Chack List ============================== */}
 
-<Button id="chackout" variant="success" size="lm">CheckOut</Button>
+<Button id="chackout" variant="success" size="lm" onClick={()=>{navigate("/checkOut")}} >CheckOut</Button>
 
         </>
     )
