@@ -6,9 +6,11 @@ import { cartrecDel,addQnty,DelQnty } from "../cartSlice";
 import { FaPlusCircle } from "react-icons/fa";
 import { FaMinusCircle } from "react-icons/fa";
 
+
 const CartProduct=()=>{
     const mycart=useSelector((state)=>state.mycart.cart);
     const dispatch=useDispatch();
+   
 
     const cartRecDel=(id)=>{
         dispatch(cartrecDel(id));
@@ -56,6 +58,7 @@ const CartProduct=()=>{
 
     return(
         <>
+        <h1 style={{marginLeft:"40%"}}>Cart Product</h1>
       <Table striped bordered hover>
       <thead>
         <tr>
@@ -80,6 +83,10 @@ const CartProduct=()=>{
           <th>{totalAmount} Rs.</th>
         </tr>
       </Table>
+{/* ============================ Chack List ============================== */}
+
+<Button id="chackout" variant="success" size="lm">CheckOut</Button>
+
         </>
     )
 }
