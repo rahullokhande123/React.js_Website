@@ -20,6 +20,11 @@ import img4 from "../../public/dish3.jpg";
 import img5 from "../../public/dish4.png";
 import img6 from "../../public/dish5.jpg";
 import video1 from "../../public/video1.mp4";
+import img7 from "../../public/dish1.jpg";
+import img8 from "../../public/dish2.jpg";
+import img9 from "../../public/dish3.jpg";
+import video2 from "../../public/video4.mp4";
+import img10 from "../../public/panipuri1.jpg";
 
 
 const Home=()=>{
@@ -149,7 +154,7 @@ const Home=()=>{
     <Container style={{margin:"50px",textAlign:"center",marginLeft:"80px"}}>
       <Row style={{display:"flex"}}>
       <Col xs={6} md={4}>
-          <a href="#"><Image src="/public/dish1.jpg" width="300px" height="300px" roundedCircle /></a> <br />
+          <a href="#"><Image src= width="300px" height="300px" roundedCircle /></a> <br />
           <div style={{margin:"40px"}}>
       
             <h2 >Breakfast</h2>
@@ -158,7 +163,7 @@ const Home=()=>{
           </div>
         </Col>
         <Col xs={6} md={4}>
-        <a href="#"><Image src="/public/dish2.jpg" width="300px" height="300px" roundedCircle /></a>
+        <a href="#"><Image src= width="300px" height="300px" roundedCircle /></a>
         <div style={{margin:"40px"}}>
           
         <h2 >Lunch</h2>
@@ -167,7 +172,7 @@ const Home=()=>{
           </div>
         </Col>
         <Col xs={6} md={4}>
-        <a href="#"><Image src="/public/dish3.jpg" width="300px" height="300px" roundedCircle /></a>
+        <a href="#"><Image src= width="300px" height="300px" roundedCircle /></a>
         <div style={{margin:"40px"}}>
           
         <h2 >Dinner</h2>
@@ -181,12 +186,12 @@ const Home=()=>{
     {/* ================================= Video ================================ */}
 
     {/* <video style={{marginLeft:"400px",position:"sticky", zIndex:2}} src="/public/video2.mp4" autoPlay muted loop controls width="700px" height="400px"></video> */}
-    <video src="/public/video4.mp4" autoPlay muted loop controls style={{position:"sticky", zIndex:-1,top:0}}>
+    <video src={video2} autoPlay muted loop controls style={{position:"sticky", zIndex:-1,top:0}}>
     </video>
 
 {/* =========================== Panipuri =================== */}
     <div id='panipuri'>
-      <img style={{border:"1px solid black",borderRadius:"2%",margin:"50px"}} src="/public/panipuri1.jpg" width="800px" height="500px" />
+      <img style={{border:"1px solid black",borderRadius:"2%",margin:"50px"}} src= width="800px" height="500px" />
       <div >
           <h1>Enjoy Your Day With Panipuri</h1>
           <h5>Absulatly Free,Only For Today</h5>
