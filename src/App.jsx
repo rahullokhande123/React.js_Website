@@ -303,7 +303,7 @@ const App=()=>{
                              <Route path="pizza" element={<Pizza/>}/>
                              <Route path="burger" element={<Burger/>}/>
                              <Route path="veg" element={<Veg/>}/>
-                           
+                             <Route path="checkOut" element={<CheckOut/>}/>
                         
                      </Route>
               </Routes>       
