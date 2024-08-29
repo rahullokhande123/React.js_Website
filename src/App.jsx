@@ -2,30 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
 </style>
 
-import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-
-import Carousel from 'react-bootstrap/Carousel';
-
-import Image from 'react-bootstrap/Image';
-
-import Footer from './Footer';
-
-
-// For Round small image
-import Col from 'react-bootstrap/Col';
-
-
-import Row from 'react-bootstrap/Row';
-
-// For Add To Card
-
-import Card from 'react-bootstrap/Card';
-import Placeholder from 'react-bootstrap/Placeholder';
 
 const App=()=>{
   return(
