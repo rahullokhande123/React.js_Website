@@ -90,7 +90,7 @@ const Home=()=>{
    <Carousel>
       <Carousel.Item>
       <img src={img2}  width="100%" height="650px" /> 
-      {/* <video src="/public/video1.mp4" autoPlay muted  controls height="400px"></video> */}
+      
         
         <Carousel.Caption>
           <h3>Hurry up !!!</h3>
