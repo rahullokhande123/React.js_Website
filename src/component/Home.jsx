@@ -190,7 +190,7 @@ const Home=()=>{
 
     {/* ================================= Video ================================ */}
 
-    {/* <video style={{marginLeft:"400px",position:"sticky", zIndex:2}} src="/public/video2.mp4" autoPlay muted loop controls width="700px" height="400px"></video> */}
+
     <video src={video2} autoPlay muted loop controls style={{position:"sticky", zIndex:-1,top:0}}>
     </video>
 
