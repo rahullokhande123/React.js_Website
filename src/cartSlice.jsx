@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-//import { message } from "antd";
+
 
 const cartSlice=createSlice({
     name:"mycart",
@@ -11,7 +11,7 @@ const cartSlice=createSlice({
             console.log(actions.payload)
           let data=state.cart.filter((item)=>item.id==actions.payload.id);
           if(data.length>=1){
-            //message.warning("Product Aleready Added!!!");
+            
                alert("Product Already Added")
           }
           else{
