@@ -46,20 +46,6 @@
       </Card>
     </div>
 
-    
-    <div className="d-flex justify-content-around">
-      <Card style={{ width: '18rem' ,margin:"50px" }}>
-        <Card.Img variant="top" src="https://cdn.shopify.com/s/files/1/0042/0750/9567/products/9_49b77efc-72c2-4f0e-a54a-b45908aeb7ab.jpg?v=1627568153&width=533" />
-        <Card.Body>
-          <Card.Title>Card Title</Card.Title>
-          <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </Card.Text>
-          <Button variant="primary">Go somewhere</Button>
-        </Card.Body>
-      </Card>
-    </div>
 
     </div>
     
