@@ -61,15 +61,14 @@
       </Card>
     </div>
 
-    <div className="d-flex justify-content-around">
-      <Card style={{ width: '18rem' ,margin:"50px" }}>
-        <Card.Img variant="top" src="https://niches.minimog.co/cdn/shop/products/1_75cb3963-e20a-464b-942e-37fba3f844b6.jpg?v=1627568236&width=360" />
-        <Card.Body>
-          <Card.Title>Card Title</Card.Title>
-          <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+    </div>
     
+    </Container>
+    <Footer/>
+    </>
+  ) */}
+//}
+//export default App; */}
 
 
 import { BrowserRouter,Routes,Route } from "react-router-dom"
