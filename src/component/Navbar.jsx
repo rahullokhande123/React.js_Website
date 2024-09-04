@@ -29,7 +29,7 @@ const Top=()=>{
         <>
       <Navbar expand="lg" className="bg-body-tertiary" style={{position:"sticky",top:0,zIndex:"3"}} >
       <Container fluid style={{backgroundColor:"yellowgreen"}}>
-        {/* <Navbar.Brand href="#" style={{fontSize:"30px", color:"black",fontFamily:"Anton SC sans-serif"}}>Home Decoration</Navbar.Brand> */}
+       
         <img style={{marginLeft:"20px",marginRight:"30px",marginTop:"5px",marginBottom:'5px'}} src={img1} width="150px" height="100px" />
         <Navbar.Toggle aria-controls="navbarScroll" style={{color:"white"}} />
         <Navbar.Collapse id="navbarScroll" style={{color:"black"}}>
