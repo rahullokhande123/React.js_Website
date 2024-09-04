@@ -31,9 +31,6 @@
 
     {/* ========================================================= */}
 
-    // <div style={{display:"flex"}}>
-    // <div className="d-flex justify-content-around">
-    //   <Card style={{ width: '18rem' ,margin:"50px" }}>
         {/* <Card.Img variant="top" src="https://niches.minimog.co/cdn/shop/products/Group920.jpg?v=1627567910&width=360" />
         <Card.Body>
           <Card.Title>Card Title</Card.Title>
