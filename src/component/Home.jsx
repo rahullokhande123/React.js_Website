@@ -80,6 +80,11 @@ const Home=()=>{
 
     return(
         <>
+         
+<marquee description="left">
+      uhuhu hbuhuhu huhh uhhu
+</marquee>
+
           {/* =============================== Carousel =================================== */}
 
    <Carousel>
