@@ -58,7 +58,7 @@ const SearchProduct=()=>{
         <hr />
         <div style={{display:"flex",justifyContent:"space-between",flexWrap:"wrap", width:"90%",margin:"auto"}}>
          {ans}
-    </div>
+        </div>
         </center>
         </>
     )
