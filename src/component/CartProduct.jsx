@@ -7,57 +7,34 @@ import { FaPlusCircle } from "react-icons/fa";
 import { FaMinusCircle } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
-import Button from 'react-bootstrap/Button';
+import { useState } from 'react';
+import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
-
-
-
-
-
-function MyVerticallyCenteredModal(props) {
-  return (
-    <Modal
-      {...props}
-      size="lg"
-      aria-labelledby="contained-modal-title-vcenter"
-      centered
-    >
-      <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">
-          Modal heading
-        </Modal.Title>
-      </Modal.Header>
-      <Modal.Body>
-        <h4>Centered Modal</h4>
-        <p>
-          Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-          dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-          consectetur ac, vestibulum at eros.
-        </p>
-      </Modal.Body>
-      <Modal.Footer>
-        <Button onClick={props.onHide}>Close</Button>
-      </Modal.Footer>
-    </Modal>
-  );
-}
-
-
-
-
-
-
-
+import axios from "axios";
 
 const CartProduct=()=>{
-  const [modalShow, setModalShow] = React.useState(false);
+   
+  const [show, setShow] = useState(false);
 
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
+  const [show2, setShow2] = useState(false);
+
+  const handleClose2 = () => setShow2(false);
+  const handleShow2=()=>{
+    setShow2(true)
+      let api="http://localhost:3000/customer%20data";
+      axios.post(api,customerData).then((res)=>{
+        alert("Data Submited")
+      })
+  }
 
 
     const mycart=useSelector((state)=>state.mycart.cart);
     const dispatch=useDispatch();
     const navigate=useNavigate();
+    const [customerData,setcustomerData]=useState("")
 
     const cartRecDel=(id)=>{
         dispatch(cartrecDel(id));
@@ -103,6 +80,16 @@ const CartProduct=()=>{
         )
     })
 
+  if(customerData.length>0){
+
+    const handleShow = () => setShow(false);
+  }
+  else{
+     
+    
+
+  }
+
     return(
         <>
         <h1 style={{marginLeft:"40%"}}>Cart Product</h1>
@@ -132,19 +119,112 @@ const CartProduct=()=>{
       </Table>
 {/* ============================ Chack List ============================== */}
 
-<Button id="chackout" variant="success" size="lm" onClick={()=>{navigate("/checkOut")}} >CheckOut</Button>
+<Button id="chackout" variant="success" size="lm" onClick={handleShow} >CheckOut</Button>
 
+{/* ============================ Modual 1 ============================== */}
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title> Shipping Address </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <Form>
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+              <Form.Label>Name</Form.Label>
+              <Form.Control
+                type="text"
+                placeholder="Enter Name"
+                autoFocus
+                value={customerData.name} onChange={(e)=>{setcustomerData(e.target.value)}}
+                />
+            </Form.Group>
 
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+              <Form.Label>Address</Form.Label>
+              <Form.Control
+                type="text"
+                placeholder="Enter Address"
+                autoFocus
+                name="address"
+                value={customerData.address} onChange={(e)=>{setcustomerData(e.target.value)}}
+                />
+            </Form.Group>
 
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+              <Form.Label>Mobile Number</Form.Label>
+              <Form.Control
+                type="number"
+                placeholder="Enter Mobile Number "
+                autoFocus
+                name="mobileNo"
+                value={customerData.mobileNo} onChange={(e)=>{setcustomerData(e.target.value)}}
+                />
+            </Form.Group>
 
-<Button variant="primary" onClick={() => setModalShow(true)}>
-        Launch vertically centered modal
-      </Button>
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+              <Form.Label>City</Form.Label>
+              <Form.Control
+                type="text"
+                placeholder="Enter City"
+                autoFocus
+                name="city"
+                value={customerData.city} onChange={(e)=>{setcustomerData(e.target.value)}}
+                />
+            </Form.Group>
 
-      <MyVerticallyCenteredModal
-        show={modalShow}
-        onHide={() => setModalShow(false)}
-      />
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+              <Form.Label>Email</Form.Label>
+              <Form.Control
+                type="email"
+                placeholder="name@example.com"
+                required
+                autoFocus
+                name="email"
+                value={customerData.email} onChange={(e)=>{setcustomerData(e.target.value)}}
+                />
+            </Form.Group>
+
+            <b>Total Amount : {totalAmount} Rs.</b> <br />
+            <b>Shipping Charges : 100 Rs.</b> <br />
+            <b>Total Paybal Amount : {totalAmount+100} </b>      
+          </Form>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          <Button variant="success" onClick={handleShow2} >
+            Next
+          </Button>
+        </Modal.Footer>
+      </Modal>
+
+      {/* ============================ Modual 2 ============================== */}
+
+      <Modal show={show2} onHide={handleClose2}>
+        <Modal.Header closeButton>
+          <Modal.Title> Choice Pyment Method </Modal.Title>
+        </Modal.Header>
+        <div style={{margin:"20px"}}>
+             <input type="radio" name="r1" /> Cash On Delivery 
+             <br/> <br/>
+             <input type="radio" name="r1" /> UPI  
+             <br/> <br/>
+             <input type="radio" name="r1" /> Credit/Debit Card 
+             <br/> <br/>
+             <input type="radio" name="r1" /> Internet Banking
+             <br/> <br/>
+
+        </div>
+  
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose2}>
+            Close
+          </Button>
+          <Button variant="success" onClick={()=>{navigate("/checkOut")}} >
+          Proceed To Payment
+          </Button>
+        </Modal.Footer>
+      </Modal>
         </>
     )
 }

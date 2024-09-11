@@ -64,5 +64,15 @@
             "category":"veg",
             "images":"mix-veg.jpg"
         }
+    ],
+    "customer data":[
+        {
+            "id":1,
+            "name":"Rahul",
+            "address":"Mix veg",
+            "mobileNo":16575828,
+            "city":"veg",
+            "email":"rlokhande06244@gmail.com"  
+        }
     ]
 }
