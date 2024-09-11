@@ -55,6 +55,7 @@ import Pizza from "./pages/Pizza";
 import Burger from "./pages/Burger";
 import Veg from "./pages/Veg";
 import CheckOut from "./pages/CheckOutProduct";
+import PayComplete from "./component/PayComplete";
 
 const App=()=>{
 
@@ -73,6 +74,7 @@ const App=()=>{
                              <Route path="burger" element={<Burger/>}/>
                              <Route path="veg" element={<Veg/>}/>
                              <Route path="checkOut" element={<CheckOut/>}/>
+                             <Route path="paycomp" element={<PayComplete/>}/>
                         
                      </Route>
               </Routes>       

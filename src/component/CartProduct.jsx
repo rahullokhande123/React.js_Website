@@ -27,7 +27,6 @@ const CartProduct=()=>{
     const mycart=useSelector((state)=>state.mycart.cart);
     const dispatch=useDispatch();
     const navigate=useNavigate();
-    const [customerData,setcustomerData]=useState("")
 
     const cartRecDel=(id)=>{
         dispatch(cartrecDel(id));
@@ -189,7 +188,7 @@ const CartProduct=()=>{
           <Button variant="secondary" onClick={handleClose2}>
             Close
           </Button>
-          <Button variant="success" onClick={()=>{navigate("/checkOut")}} >
+          <Button variant="success" onClick={()=>{navigate("/paycomp")}} >
           Proceed To Payment
           </Button>
         </Modal.Footer>
