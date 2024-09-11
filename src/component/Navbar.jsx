@@ -14,7 +14,16 @@ import { useNavigate } from 'react-router-dom';
 
 import img1 from "../../public/Logo.png";
 
+import { useState } from 'react';
+import Modal from 'react-bootstrap/Modal';
+
 const Top=()=>{
+
+  const [show,setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  const [product,setProduct]=useState("")
 
   const myCart=useSelector((state)=>state.mycart.cart);
   const navigate=useNavigate();
@@ -23,6 +32,11 @@ const Top=()=>{
 
   const changeNavigate=()=>{
     navigate("./cartproduct")
+  }
+
+  const handleSearch=(product)=>{
+    navigate('/searchproduct/${product}')
+    setShow(false)
   }
 
     return(
@@ -84,12 +98,46 @@ const Top=()=>{
           </div>
            
           <div>
-          <FaSearch style={{fontSize:"20px",color:"black",marginRight:"55px"}} />
+          <FaSearch onClick={handleShow} style={{fontSize:"20px",color:"black",marginRight:"55px"}} />
           </div>
           
         </Navbar.Collapse>
       </Container>
     </Navbar>
+
+    {/* ==================================== Modul =============================== */}
+
+    {/* <Button variant="primary" onClick={handleShow}>
+        Launch demo modal
+      </Button> */}
+
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Search Product</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <Form>
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+              {/* <Form.Label>Search</Form.Label> */}
+              <Form.Control
+                type="text"
+                placeholder="Product Name"
+                autoFocus
+                value={product} onChange={(e)=>{setProduct(e.target.value)}}
+              />
+            </Form.Group>
+  
+          </Form>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          <Button variant="primary" onClick={handleSearch}>
+            Search
+          </Button>
+        </Modal.Footer>
+      </Modal>
     
         </>
     )
