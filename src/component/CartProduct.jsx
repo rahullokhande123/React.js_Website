@@ -7,10 +7,9 @@ import { FaPlusCircle } from "react-icons/fa";
 import { FaMinusCircle } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
-import axios from "axios";
 
 const CartProduct=()=>{
    
@@ -22,18 +21,7 @@ const CartProduct=()=>{
   const [show2, setShow2] = useState(false);
 
   const handleClose2 = () => setShow2(false);
-  const handleShow2 = () => setShow2(true)
-
-  const postDat=()=>{
-    let api="http://localhost:3000/customerData";
-    axios.post(api,customerData).then((res)=>{
-      alert("Data Submited")
-    })
-  }
-  useEffect(()=>{
-    postDat();
-  },[])
-  
+  const handleShow2 = () => setShow2(true);
 
 
     const mycart=useSelector((state)=>state.mycart.cart);
@@ -85,16 +73,6 @@ const CartProduct=()=>{
         )
     })
 
-  if(customerData.length>0){
-
-    const handleShow = () => setShow(false);
-  }
-  else{
-     
-    
-
-  }
-
     return(
         <>
         <h1 style={{marginLeft:"40%"}}>Cart Product</h1>
@@ -138,9 +116,7 @@ const CartProduct=()=>{
               <Form.Control
                 type="text"
                 placeholder="Enter Name"
-                autoFocus
-                value={customerData.name} onChange={(e)=>{setcustomerData(e.target.value)}}
-                />
+                autoFocus/>
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
@@ -148,10 +124,7 @@ const CartProduct=()=>{
               <Form.Control
                 type="text"
                 placeholder="Enter Address"
-                autoFocus
-                name="address"
-                value={customerData.address} onChange={(e)=>{setcustomerData(e.target.value)}}
-                />
+                autoFocus/>
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
@@ -159,10 +132,7 @@ const CartProduct=()=>{
               <Form.Control
                 type="number"
                 placeholder="Enter Mobile Number "
-                autoFocus
-                name="mobileNo"
-                value={customerData.mobileNo} onChange={(e)=>{setcustomerData(e.target.value)}}
-                />
+                autoFocus/>
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
@@ -170,10 +140,7 @@ const CartProduct=()=>{
               <Form.Control
                 type="text"
                 placeholder="Enter City"
-                autoFocus
-                name="city"
-                value={customerData.city} onChange={(e)=>{setcustomerData(e.target.value)}}
-                />
+                autoFocus/>
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
@@ -182,10 +149,7 @@ const CartProduct=()=>{
                 type="email"
                 placeholder="name@example.com"
                 required
-                autoFocus
-                name="email"
-                value={customerData.email} onChange={(e)=>{setcustomerData(e.target.value)}}
-                />
+                autoFocus/>
             </Form.Group>
 
             <b>Total Amount : {totalAmount} Rs.</b> <br />
