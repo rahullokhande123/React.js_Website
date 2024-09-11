@@ -12,19 +12,19 @@ import Pizza from "../pages/Pizza";
 
 const SearchProduct=()=>{
 
-    const {prd}=useParams();
-    const navigate=useNavigate();
-    // const [val,setVal]=useState("");
+    // const {prd}=useParams();
+    // const navigate=useNavigate();
+    const [val,setVal]=useState("");
     const [mydata,setMydata]=useState([]);
     const dispatch= useDispatch();
 
-    // const handleChange=(e)=>{
-    //     setVal(e.target.value);
-    //     let api=`http://localhost:3000/product`;
-    //     axios.get(api).then((res)=>{
-    //         setMydata(res.data);
-    //     })
-    // }
+    const handleChange=(e)=>{
+        setVal(e.target.value);
+        let api=`http://localhost:3000/product`;
+        axios.get(api).then((res)=>{
+            setMydata(res.data);
+        })
+    }
     const handleSearchLoad=()=>{
       let api="http://localhost:3000/product";
       axios.get(api).then((res)=>{
@@ -42,12 +42,10 @@ const SearchProduct=()=>{
       navigate("/productdisplay",{state:key});
     }
 
-
-    // const ans=mydata.map((key)=>{
-        // let str=key.name;
-        // let status=str.includes(val);
-        // if(status==true){
-       const ans=mydata.map((key)=>{
+    const ans=mydata.map((key)=>{
+        let str=key.name;
+        let status=str.includes(val);
+        if(status==true){
         return(
           <>
           <Card style={{ width: '18rem', margin:"auto",margin:"20px" }}>
@@ -66,17 +64,17 @@ const SearchProduct=()=>{
     
                 </>
         )
-       })
-    
+      }
+    })
     return(
         <>
-        {/* <center>
+        <center>
+        <input type="text"  value={val} placeholder="Product Name" onChange={handleChange} />
         <div style={{display:"flex",justifyContent:"space-between",flexWrap:"wrap", width:"90%",margin:"auto"}}>
          {ans}
         </div>
-        </center> */}
-        {ans}
+        </center>
         </>
     )
-}
+  }
 export default SearchProduct;
