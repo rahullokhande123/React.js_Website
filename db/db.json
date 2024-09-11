@@ -1,78 +1,84 @@
 {
-    "product":[
-        {
-            "id":1,
-            "name":"Pizza",
-            "description":"Delicious Pizza On 25% OFF",
-            "price":179,
-            "category":"pizza",
-            "images":"pizza1.jpg"
-        },
-        {
-            "id":2,
-            "name":"Burger",
-            "description":"Burger With Snackes",
-            "price":149,
-            "category":"burger",
-            "images":"burger1.jpg"
-        },
-        {
-            "id":3,
-            "name":"Chicken",
-            "description":" Chily Kadhai Chicken ",
-            "price":180,
-            "category":"nonveg",
-            "images":"chicken1.jpg"
-        },
-        {
-            "id":4,
-            "name":"French Fries",
-            "description":"Yummi French Fries",
-            "price":120,
-            "category":"french",
-            "images":"french1.jpg"
-        },
-        {
-            "id":5,
-            "name":"Dilux Thari",
-            "description":"This is Red Color Clothe",
-            "price":249,
-            "category":"veg",
-            "images":"veg1.jpg"
-        },
-        {
-            "id":6,
-            "name":"Sendwich Bread",
-            "description":"Lazziz Tasty Bread Sendwich",
-            "price":149,
-            "category":"chinese",
-            "images":"sendwich1.jpg"
-        },
-        {
-            "id":7,
-            "name":"Spicy Noodles",
-            "description":"Spicy Hot Chili Noodles",
-            "price":120,
-            "category":"chinese",
-            "images":"noodles1.jpg"
-        },
-        {
-            "id":8,
-            "name":"Mix Veg",
-            "description":"Mix veg",
-            "price":165,
-            "category":"veg",
-            "images":"mix-veg.jpg"
-        }
-    ],
-    "customerData":[
-        {
-            "id":1,
-            "name":"Rahul",
-            "address":"Mix veg",
-            "mobileNo":16575828,
-            "city":"veg",
-            "email":"rlokhande06244@gmail.com"  
-        }
-    ]
+  "product": [
+    {
+      "id": 1,
+      "name": "Pizza",
+      "description": "Delicious Pizza On 25% OFF",
+      "price": 179,
+      "category": "pizza",
+      "images": "pizza1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Burger",
+      "description": "Burger With Snackes",
+      "price": 149,
+      "category": "burger",
+      "images": "burger1.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Chicken",
+      "description": " Chily Kadhai Chicken ",
+      "price": 180,
+      "category": "nonveg",
+      "images": "chicken1.jpg"
+    },
+    {
+      "id": 4,
+      "name": "French Fries",
+      "description": "Yummi French Fries",
+      "price": 120,
+      "category": "french",
+      "images": "french1.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Dilux Thari",
+      "description": "This is Red Color Clothe",
+      "price": 249,
+      "category": "veg",
+      "images": "veg1.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Sendwich Bread",
+      "description": "Lazziz Tasty Bread Sendwich",
+      "price": 149,
+      "category": "chinese",
+      "images": "sendwich1.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Spicy Noodles",
+      "description": "Spicy Hot Chili Noodles",
+      "price": 120,
+      "category": "chinese",
+      "images": "noodles1.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Mix Veg",
+      "description": "Mix veg",
+      "price": 165,
+      "category": "veg",
+      "images": "mix-veg.jpg"
+    }
+  ],
+  "customerData": [
+    {
+      "id": 1,
+      "name": "Rahul",
+      "address": "Mix veg",
+      "mobileNo": 16575828,
+      "city": "veg",
+      "email": "rlokhande06244@gmail.com"
+    },
+    {
+      "id": "888c"
+    },
+    {
+      "id": "68d7"
+    }
+  ]
 }

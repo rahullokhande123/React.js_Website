@@ -7,7 +7,7 @@ import { FaPlusCircle } from "react-icons/fa";
 import { FaMinusCircle } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
 import axios from "axios";
@@ -22,13 +22,18 @@ const CartProduct=()=>{
   const [show2, setShow2] = useState(false);
 
   const handleClose2 = () => setShow2(false);
-  const handleShow2=()=>{
-    setShow2(true)
-      let api="http://localhost:3000/customer%20data";
-      axios.post(api,customerData).then((res)=>{
-        alert("Data Submited")
-      })
+  const handleShow2 = () => setShow2(true)
+
+  const postDat=()=>{
+    let api="http://localhost:3000/customerData";
+    axios.post(api,customerData).then((res)=>{
+      alert("Data Submited")
+    })
   }
+  useEffect(()=>{
+    postDat();
+  },[])
+  
 
 
     const mycart=useSelector((state)=>state.mycart.cart);
