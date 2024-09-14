@@ -24,9 +24,9 @@ const CartProduct=()=>{
   const handleShow2 = () => setShow2(true);
 
 
-    const mycart=useSelector((state)=>state.mycart.cart);
-    const dispatch=useDispatch();
-    const navigate=useNavigate();
+  const mycart=useSelector((state)=>state.mycart.cart);
+  const dispatch=useDispatch();
+  const navigate=useNavigate();
 
     const cartRecDel=(id)=>{
         dispatch(cartrecDel(id));
@@ -72,6 +72,7 @@ const CartProduct=()=>{
         )
     })
 
+
     return(
         <>
         <h1 style={{marginLeft:"40%"}}>Cart Product</h1>
@@ -104,7 +105,7 @@ const CartProduct=()=>{
 <Button id="chackout" variant="success" size="lm" onClick={handleShow} >CheckOut</Button>
 
 {/* ============================ Modual 1 ============================== */}
-      <Modal show={show} onHide={handleClose}>
+      <Modal className="modual1" show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title> Shipping Address </Modal.Title>
         </Modal.Header>
@@ -160,7 +161,7 @@ const CartProduct=()=>{
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
-          <Button variant="success" onClick={handleShow2} >
+          <Button variant="success" onClick={handleShow2}>
             Next
           </Button>
         </Modal.Footer>
@@ -168,7 +169,7 @@ const CartProduct=()=>{
 
       {/* ============================ Modual 2 ============================== */}
 
-      <Modal show={show2} onHide={handleClose2}>
+      <Modal className="modual2" show={show2} onHide={handleClose2}>
         <Modal.Header closeButton>
           <Modal.Title> Choice Pyment Method </Modal.Title>
         </Modal.Header>
