@@ -21,8 +21,13 @@ const CartProduct=()=>{
   const [show2, setShow2] = useState(false);
 
   const handleClose2 = () => setShow2(false);
-  const handleShow2 = () => setShow2(true);
+  // const handleShow2 = () => setShow2(true);
 
+  const handleShow2=()=>{
+    setShow(false);
+    setShow2(true)
+    
+  }
 
   const mycart=useSelector((state)=>state.mycart.cart);
   const dispatch=useDispatch();

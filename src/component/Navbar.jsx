@@ -105,11 +105,7 @@ const Top=()=>{
       </Container>
     </Navbar>
 
-    {/* ==================================== Modul =============================== */}
-
-    {/* <Button variant="primary" onClick={handleShow}>
-        Launch demo modal
-      </Button> */}
+    {/* ================================= Module =============================== */}
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
