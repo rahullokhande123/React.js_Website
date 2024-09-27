@@ -34,8 +34,8 @@ const Top=()=>{
     navigate("./cartproduct")
   }
 
-  const handleSearch=(product)=>{
-    navigate('/searchproduct/${product}')
+  const handleSearch=()=>{
+    navigate('/searchproduct/${product}')      
     setShow(false)
   }
 
@@ -100,6 +100,12 @@ const Top=()=>{
           <div>
           <FaSearch onClick={handleShow} style={{fontSize:"20px",color:"black",marginRight:"55px"}} />
           </div>
+
+
+        {/* <div class="container">
+            <input type="text" placeholder="Search..."/>
+          <div class="search"></div>
+        </div> */}
           
         </Navbar.Collapse>
       </Container>

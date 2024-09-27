@@ -68,7 +68,7 @@ const App=()=>{
                              <Route index element={<Home/>}/>
                              <Route path="home" element={<Home/>}/> 
                              <Route path="cartproduct" element={<CartProduct/>}/>
-                             <Route path="searchproduct" element={<SearchProduct/>}/>
+                             <Route path="searchproduct/:prd" element={<SearchProduct/>}/>
                              <Route path="productdisplay" element={<ProductDisplay/>}/>
                              <Route path="pizza" element={<Pizza/>}/>
                              <Route path="burger" element={<Burger/>}/>
